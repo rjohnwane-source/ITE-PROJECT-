@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pahina is a curated shelf of manga and anime stories.">
+  <title>Pahina. — The Shelf</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body data-page="home">
+  <header class="site-header" data-site-header></header>
+
+  <main class="site-main">
+    <section class="home-hero" aria-labelledby="home-heading">
+      <div class="home-copy">
+        <p class="eyebrow">30 titles / one shelf</p>
+        <h1 class="home-headline" id="home-heading">Find your next <i>world.</i></h1>
+        <p class="home-description">A hand-picked shelf of manga and anime titles. Explore each story, save favourites, and return to the chapters you love.</p>
+      </div>
+      <article class="featured-card" id="featured-title" aria-live="polite"></article>
+    </section>
+
+    <section class="shelf-section" aria-labelledby="shelf-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Browse / save / return</p>
+          <h2 id="shelf-heading">The Shelf</h2>
+        </div>
+        <p class="section-hint meta">Scroll covers · choose a title</p>
+      </div>
+
+      <div class="shelf-tools" aria-label="Filter stories by genre">
+        <button class="filter-button" type="button" data-genre-filter="All" aria-pressed="true">All</button>
+        <button class="filter-button" type="button" data-genre-filter="Romance" aria-pressed="false">Romance</button>
+        <button class="filter-button" type="button" data-genre-filter="Horror" aria-pressed="false">Horror</button>
+        <button class="filter-button" type="button" data-genre-filter="Mystery" aria-pressed="false">Mystery</button>
+        <button class="filter-button" type="button" data-genre-filter="Fantasy" aria-pressed="false">Fantasy</button>
+        <button class="filter-button" type="button" data-genre-filter="Slice of Life" aria-pressed="false">Slice of Life</button>
+        <button class="filter-button" type="button" data-genre-filter="Sci-Fi" aria-pressed="false">Sci-Fi</button>
+        <button class="filter-button" type="button" data-genre-filter="Drama" aria-pressed="false">Drama</button>
+        <button class="filter-button" type="button" data-genre-filter="Comedy" aria-pressed="false">Comedy</button>
+      </div>
+
+      <div class="cover-shelf" id="shelf" aria-label="Anime and manga shelf"></div>
+    </section>
+  </main>
+
+  <div data-cookie-consent></div>
+  <footer class="site-footer" data-site-footer></footer>
+</body>
+</html>
